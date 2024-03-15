@@ -36,7 +36,7 @@ const addNewGoal = () => {
     // If a duplicate is found, display an alert to the user and don't add the goal to the list.
     // If it's not a duplicate, proceed with adding it as a new goal.
     if (isDuplicate){
-        alert('Copy Cat CHile');
+        alert('Goal already exists!');
     } else {
         const newGoal = document.createElement('li');
         newGoal.textContent = goalInput;
