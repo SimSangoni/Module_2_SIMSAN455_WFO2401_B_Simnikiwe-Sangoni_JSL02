@@ -37,11 +37,12 @@ const addNewGoal = () => {
     // If it's not a duplicate, proceed with adding it as a new goal.
     if (isDuplicate){
         alert('Goal already exists!');
-    } else {
-        const newGoal = document.createElement('li');
-        newGoal.textContent = goalInput;
-        goalList.appendChild(newGoal);
-    }
+        return;
+    } 
+
+    const newGoal = document.createElement('li');
+    newGoal.textContent = goalInput;
+    goalList.appendChild(newGoal);
     // ⚠️ Hint 3: Code structure
     // You might want to wrap the duplicate-checking logic in an 'if' statement.
     
