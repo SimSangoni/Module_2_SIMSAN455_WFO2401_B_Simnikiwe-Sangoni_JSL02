@@ -37,7 +37,10 @@ const addNewGoal = () => {
     // If it's not a duplicate, proceed with adding it as a new goal.
     if (isDuplicate){
         alert('Copy Cat CHile');
-        return;
+    } else {
+        const newGoal = document.createElement('li');
+        newGoal.textContent = goalInput;
+        goalList.appendChild(newGoal);
     }
     // ⚠️ Hint 3: Code structure
     // You might want to wrap the duplicate-checking logic in an 'if' statement.
@@ -46,9 +49,9 @@ const addNewGoal = () => {
     // The event listener that removes goals when clicked is not related to this issue.
     // Focus on preventing duplicates for now.
     
-    const newGoal = document.createElement('li');
-    newGoal.textContent = goalInput;
-    goalList.appendChild(newGoal);
+    // const newGoal = document.createElement('li');
+    // newGoal.textContent = goalInput;
+    // goalList.appendChild(newGoal);
 };
 
 // Add event listener to the goal submit button
